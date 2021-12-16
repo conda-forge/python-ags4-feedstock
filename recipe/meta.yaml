@@ -1,5 +1,5 @@
 {% set name = "python-AGS4" %}
-{% set version = "0.3.6" %}
+{% set version = "0.3.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8f0ec45bcd100bc7db3d650c3db68601d611d1dfddb2a21cad3db6c279c15e4f
+  sha256: 1a7cc996688a12597dc17d96d412c3bc1b0f89cd902534d2a9550da3703c9a24
 
 build:
   noarch: python
