@@ -43,7 +43,6 @@ about:
   license_family: GPL
   license_file: 
     - LICENSE
-    - COPYING.LESSER
   summary: A library to read, write, and check AGS4 files using Pandas DataFrames
 
 extra:
