@@ -3,11 +3,11 @@ About python-ags4
 
 Home: https://gitlab.com/ags-data-format-wg/ags-python-library
 
-Package license: GPL-3.0-or-later
+Package license: LGPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-ags4-feedstock/blob/main/LICENSE.txt)
 
-Summary: A library to read and write AGS4 files using Pandas DataFrames
+Summary: A library to read, write, and check AGS4 files using Pandas DataFrames
 
 Current build status
 ====================
