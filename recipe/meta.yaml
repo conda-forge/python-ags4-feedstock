@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_ags4-{{ version }}.tar.gz
   sha256: 3e22d74f808e97daf12f3ed92173179c0e563b4dd65aedae3ee55b36c71d9c13
 
 build:
