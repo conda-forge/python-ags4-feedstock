@@ -1,13 +1,13 @@
 {% set name = "python-AGS4" %}
-{% set version = "0.4.1" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 29fcd06205235437efd25e344e5df427e0e7d10a1b5d09e19f7993fafc15dedc
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/python_ags4-{{ version }}.tar.gz
+  sha256: 3e22d74f808e97daf12f3ed92173179c0e563b4dd65aedae3ee55b36c71d9c13
 
 build:
   noarch: python
@@ -18,16 +18,16 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - poetry
   run:
-    - python >=3.7
-    - pandas >=1.0,<2.0
+    - python >=3.8
+    - pandas >=2.0
     - openpyxl >=3.0,<4.0
     - defusedxml >=0.6.0,<1.0
     - click >=7.0,<9.0
-    - rich >=9.0,<13.0
+    - rich >=9.0,<14.0
 
 test:
   imports:
