@@ -11,18 +11,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ags4_cli = python_ags4.ags4_cli:main
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - pandas >=2.0
     - openpyxl >=3.0,<4.0
     - defusedxml >=0.6.0,<1.0
@@ -34,6 +34,7 @@ test:
     - python_ags4
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - ags4_cli --help
 
