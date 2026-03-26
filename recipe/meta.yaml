@@ -1,5 +1,5 @@
 {% set name = "python-AGS4" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/python_ags4-{{ version }}.tar.gz
-  sha256: aa44608abef701c0d455c00f03f6e144a106d016e261853e43f133e9ad932d53
+  sha256: 4bbc3b9c59b88aa4e1a180d35f88ae3fa6e5bfdfb3cef3cc48f3067861d9534e
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - ags4_cli = python_ags4.ags4_cli:main
